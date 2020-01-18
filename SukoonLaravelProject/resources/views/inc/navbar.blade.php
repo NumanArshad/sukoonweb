@@ -38,10 +38,10 @@
               Doctors <b class="caret"></b>
             </a>
           <ul class="dropdown-menu">
-            <li><a href="{{url('templateindex/specific')}}">Neurologist</a></li>
-            <li><a href="{{url('templateindex/specific')}}">Urologists</a></li>
-            <li><a href="{{url('templateindex/specific')}}">Dermatologists</a></li>
-            <li><a href="{{url('templateindex/specific')}}">Pulmonologists</a></li>
+            <li><a href="{{url('templateindex/alldoctor')}}">Neurologist</a></li>
+            <li><a href="{{url('templateindex/alldoctor')}}">Urologists</a></li>
+            <li><a href="{{url('templateindex/alldoctor')}}">Dermatologists</a></li>
+            <li><a href="{{url('templateindex/alldoctor')}}">Pulmonologists</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -50,10 +50,10 @@
               Consult Online <b class="caret"></b>
             </a>
           <ul class="dropdown-menu">
-            <li><a href="{{url('templateindex/consultdoctor')}}">Neurologist</a></li>
-            <li><a href="{{url('templateindex/consultdoctor')}}">Urologists</a></li>
-            <li><a href="{{url('templateindex/consultdoctor')}}">Dermatologists</a></li>
-            <li><a href="{{url('templateindex/consultdoctor')}}">Pulmonologists</a></li>
+            <li><a href="{{url('templateindex/consultdoctorindex')}}">Neurologist</a></li>
+            <li><a href="{{url('templateindex/consultdoctorindex')}}">Urologists</a></li>
+            <li><a href="{{url('templateindex/consultdoctorindex')}}">Dermatologists</a></li>
+            <li><a href="{{url('templateindex/consultdoctorindex')}}">Pulmonologists</a></li>
           </ul>
         </li>
         {{-- <li><a href="#pricing">Pricing</a></li> --}}

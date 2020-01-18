@@ -43,12 +43,15 @@ Route::get('/templateindex',function(){
 Route::get('templateindex/newdoctor',function(){
     return view('pages.newdoctor');
 });
-Route::get('templateindex/specific',function(){
-    return view('pages.finddoctor');
+Route::get('templateindex/alldoctor',function(){
+    return view('pages.alldoctorcontainer');
 });
 Route::get('templateindex/bookappoint',function(){
     return view('pages.bookappointment');
 });
 Route::get('templateindex/consultdoctor',function(){
     return view('pages.consultdoctor');
+});
+Route::get('templateindex/consultdoctorindex',function(){
+    return view('pages.consultingcontainer');
 });

@@ -6,7 +6,7 @@
         <li class="#">Doctor Name</li>
         <li class="active">Book Consult Time</li>
     </ol>
-    @include('pages.doctordetailitem',['activepage'=>'consultdoctor'])
+    @include('pages.doctordetailitem',['activepage'=>'selectedconsultant'])
     <div class="bg-white" style="padding:20px;margin-bottom:10px;margin-top:-10px">
         <header style="color:navy;font-size:17px;font-weight:bold">Available Contact Number</header>
 
@@ -50,6 +50,9 @@
                 <input type='time' class="form-control" />
             </div>
         </div>
+       
+ 
+     
         {{-- <div class='col-sm-6'>
 
             <div class="form-group">

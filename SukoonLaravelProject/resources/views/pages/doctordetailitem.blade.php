@@ -1,7 +1,7 @@
 <div class="row bg-white"
     style="padding-top:20px;padding-bottom:20px;margin-bottom:20px;margin-left:0.04%;margin-right:0.04%;margin-top:-10px">
     <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-        <img src="{{asset('template/img/logo.png')}}" style="width:100%;height:100px;padding-bottom:50px" alt=""
+        <img src="{{ asset('template/img/logo.png')}}" style="width:100%;height:100px;padding-bottom:50px" alt=""
             srcset="">
     </div>
     <div class="col-lg-10 col-md-9 col-sm-8 col-xs-8 justify-content-start">
@@ -91,14 +91,26 @@
 
         </div>
 
-        <div class="col-xs-12">
-            <button class="btn btn-primary btn-lg" style="border-radius:20px;text-transform:lowercase"
+        <div class="col-xs-12" style="margin-top:-10px">
+            <button class="btn btn-primary btn-lg" style="margin-top:5px;border-radius:20px;text-transform:lowercase"
                 onclick="window.location='{{url("templateindex/bookappoint")}}'">Book
                 Appointment</button>
             <button class="btn btn-default btn-lg" onclick="window.location='{{url("templateindex/consultdoctor")}}'"
-                style="border-radius:20px;text-transform:lowercase;color:black">Consult Online</button>
+                style="border-radius:20px;margin-top:5px;text-transform:lowercase;color:black">Consult Online</button>
         </div>
+ 
+        
+    @elseif($activepage=='consultdoctor')
+        
+    <div class="col-xs-12" style="margin-top:-5px;margin-left:-5px">
+        <button class="btn btn-primary" style="margin-top:5px;border-radius:20px;text-transform:lowercase"
+            onclick="window.location='{{url("templateindex/consultdoctor")}}'">Book
+            your Time</button>
+      
+      
+    </div>
         @endif
+        
 
     </div>
 

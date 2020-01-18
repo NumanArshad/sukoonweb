@@ -2,35 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <title>Medicio landing page template for Health niche</title>
+	<title>Medicio landing page template for Health niche</title>
 	{{-- buit in bootsrtap files --}}
 	{{-- <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
-    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> --}}
-    {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
+	<!-- Fonts -->
+	{{-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> --}}
+	{{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
-    <!-- Styles -->
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">  --}}
+	<!-- Styles -->
+	{{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 	{{-- built int bootstrap --}}
 
 
-    <!-- css -->
-<link href="{{asset('template/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('template/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css"
-	 href="{{asset('template/plugins/cubeportfolio/css/cubeportfolio.min.css')}}">
+	<!-- css -->
+	<link href="{{asset('template/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('template/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="{{asset('template/plugins/cubeportfolio/css/cubeportfolio.min.css')}}">
 	<link href="{{asset('template/css/nivo-lightbox.css')}}" rel="stylesheet" />
-<link href="{{asset('template/css/nivo-lightbox-theme/default/default.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{asset('template/css/nivo-lightbox-theme/default/default.css')}}" rel="stylesheet" type="text/css" />
 	<link href="{{asset('template/css/owl.carousel.css')}}" rel="stylesheet" media="screen" />
-    <link href="{{asset('template/css/owl.theme.css')}}" rel="stylesheet" media="screen" />
+	<link href="{{asset('template/css/owl.theme.css')}}" rel="stylesheet" media="screen" />
 	<link href="{{asset('template/css/animate.css')}}" rel="stylesheet" />
-    <link href="{{asset('template/css/style.css')}}" rel="stylesheet">
+	<link href="{{asset('template/css/style.css')}}" rel="stylesheet">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 	<!-- boxed bg -->
 	{{-- <link id="bodybg" href="{{asset('template/bodybg/bg1.css')}}" rel="stylesheet" type="text/css" /> --}}
@@ -38,15 +37,19 @@
 	<link id="t-colors" href="{{asset('template/color/default.css')}}" rel="stylesheet">
 
 
-    {{-- new --}}
-    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> --}}
+	{{-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> --}}
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	{{-- new --}}
+	{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> --}}
 </head>
 
 <body id="page-top" class="bg-gray" data-spy="scroll" data-target=".navbar-custom">
 
-<div id="wrapper" >
-	@include('inc.navbar')
-    {{-- <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	<div id="wrapper">
+		@include('inc.navbar')
+		{{-- <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="top-area">
 			<div class="container">
 				<div class="row">
@@ -69,11 +72,11 @@
                     <img src="template/img/logo.png" alt="" width="150" height="40" />
                 </a>
                 {{-- {{ asset('template/img/logo.png') }} --}}
-            {{-- </div> --}}
-            
+		{{-- </div> --}}
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            {{-- <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		{{-- <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
 				<li class="active"><a href="#intro">Home</a></li>
 				<li><a href="#service">Service</a></li>
@@ -91,15 +94,15 @@
 				</li>
 			  </ul>
             </div> --}}
-            <!-- /.navbar-collapse -->
-     
-        <!-- /.container -->
-    {{-- </nav>  --}}
-</div>
-@yield('childcontent')
+		<!-- /.navbar-collapse -->
+
+		<!-- /.container -->
+		{{-- </nav>  --}}
+	</div>
+	@yield('childcontent')
 
 	<!-- Section: intro -->
-    {{-- <section id="intro" class="intro">
+	{{-- <section id="intro" class="intro">
 		<div class="intro-content">
 			<div class="container">
 				<div class="row">
@@ -741,118 +744,118 @@
 	</section>	 --}}
 
 	<footer>
-	
+
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-md-4">
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
-					<div class="widget">
-						<h5>About Medicio</h5>
-						<p>
-						Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea
-						</p>
-					</div>
+						<div class="widget">
+							<h5>About Medicio</h5>
+							<p>
+								Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea
+							</p>
+						</div>
 					</div>
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
-					<div class="widget">
-						<h5>Information</h5>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Laboratory</a></li>
-							<li><a href="#">Medical treatment</a></li>
-							<li><a href="#">Terms & conditions</a></li>
-						</ul>
-					</div>
+						<div class="widget">
+							<h5>Information</h5>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Laboratory</a></li>
+								<li><a href="#">Medical treatment</a></li>
+								<li><a href="#">Terms & conditions</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
-					<div class="widget">
-						<h5>Medicio center</h5>
-						<p>
-						Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.
-						</p>
-						<ul>
-							<li>
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
-								</span> Monday - Saturday, 8am to 10pm
-							</li>
-							<li>
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-								</span> +62 0888 904 711
-							</li>
-							<li>
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-								</span> hello@medicio.com
-							</li>
+						<div class="widget">
+							<h5>Medicio center</h5>
+							<p>
+								Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.
+							</p>
+							<ul>
+								<li>
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+									</span> Monday - Saturday, 8am to 10pm
+								</li>
+								<li>
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+									</span> +62 0888 904 711
+								</li>
+								<li>
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+									</span> hello@medicio.com
+								</li>
 
-						</ul>
-					</div>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
-					<div class="widget">
-						<h5>Our location</h5>
-						<p>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>		
-						
-					</div>
+						<div class="widget">
+							<h5>Our location</h5>
+							<p>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
+
+						</div>
 					</div>
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
-					<div class="widget">
-						<h5>Follow us</h5>
-						<ul class="company-social">
+						<div class="widget">
+							<h5>Follow us</h5>
+							<ul class="company-social">
 								<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li class="social-google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
 								<li class="social-vimeo"><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
 								<li class="social-dribble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-						</ul>
-					</div>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 		<div class="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-md-6 col-lg-6">
-					<div class="wow fadeInLeft" data-wow-delay="0.1s">
-					<div class="text-left">
-					<p>&copy;Copyright 2015 - Medicio. All rights reserved.</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="wow fadeInLeft" data-wow-delay="0.1s">
+							<div class="text-left">
+								<p>&copy;Copyright 2015 - Medicio. All rights reserved.</p>
+							</div>
+						</div>
 					</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-6 col-lg-6">
-					<div class="wow fadeInRight" data-wow-delay="0.1s">
-					<div class="text-right">
-						<p><a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste</p>
-					</div>
-                    <!-- 
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="wow fadeInRight" data-wow-delay="0.1s">
+							<div class="text-right">
+								<p><a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste</p>
+							</div>
+							<!-- 
                         All links in the footer should remain intact. 
                         Licenseing information is available at: http://bootstraptaste.com/license/
                         You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Medicio
                     -->
+						</div>
 					</div>
 				</div>
-			</div>	
-		</div>
+			</div>
 		</div>
 	</footer>
 
 
-<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
 	<!-- Core JavaScript Files -->
-    <script src="{{asset('template/js/jquery.min.js')}}"></script>	 
-    <script src="{{asset('template/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('template/js/jquery.easing.min.js')}}"></script>
+	<script src="{{asset('template/js/jquery.min.js')}}"></script>
+	<script src="{{asset('template/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('template/js/jquery.easing.min.js')}}"></script>
 	<script src="{{asset('template/js/wow.min.js')}}"></script>
 	<script src="{{asset('template/js/jquery.scrollTo.js')}}"></script>
 	<script src="{{asset('template/js/jquery.appear.js')}}"></script>
@@ -860,26 +863,184 @@
 	<script src="{{asset('template/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js')}}"></script>
 	<script src="{{asset('template/js/owl.carousel.min.js')}}"></script>
 	<script src="{{asset('template/js/nivo-lightbox.min.js')}}"></script>
-    <script src="{{asset('template/js/custom.js')}}"></script>
+	<script src="{{asset('template/js/custom.js')}}"></script>
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 	<script>
-	$(function() {
+		$(function() {
 	  $( "#datepicker" ).datepicker();
 	});
 // 	$(function() {
 //           $( "#datepicker" ).datepicker( "option", "dateFormat", 'd MM, y');
 //   });
-    </script>
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	{{-- <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script> 
 	   <script type="text/javascript">
                 $(function () {
                   $('#datetimepicker1').datetimepicker();
               });
-            </script> --}}
-	 
+			</script> --}}
 
+	{{-- stepper jquery and jscript script --}}
+	<script>
+		$(document).ready(function () {
+
+var navListItems = $('div.setup-panel div a'),
+	allWells = $('.setup-content'),
+	allNextBtn = $('.nextBtn');
+
+allWells.hide();
+
+navListItems.click(function (e) {
+	e.preventDefault();
+	var $target = $($(this).attr('href')),
+		$item = $(this);
+
+	if (!$item.hasClass('disabled')) {
+		navListItems.removeClass('btn-success').addClass('btn-default');
+		$item.addClass('btn-success');
+		allWells.hide();
+		$target.show();
+		$target.find('input:eq(0)').focus();
+	}
+});
+
+allNextBtn.click(function () {
+	var curStep = $(this).closest(".setup-content"),
+		curStepBtn = curStep.attr("id"),
+		nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+		curInputs = curStep.find("input[type='text'],input[type='url']"),
+		isValid = true;
+
+	$(".form-group").removeClass("has-error");
+	for (var i = 0; i < curInputs.length; i++) {
+		if (!curInputs[i].validity.valid) {
+			isValid = false;
+			$(curInputs[i]).closest(".form-group").addClass("has-error");
+		}
+	}
+
+	if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+});
+
+$('div.setup-panel div a.btn-success').trigger('click');
+});
+// 		$(document).ready(function () {
+//   var navListItems = $('div.setup-panel div a'),
+//           allWells = $('.setup-content'),
+//           allNextBtn = $('.nextBtn'),
+//   		  allPrevBtn = $('.prevBtn');
+
+//   allWells.hide();
+
+//   navListItems.click(function (e) {
+//       e.preventDefault();
+//       var $target = $($(this).attr('href')),
+//               $item = $(this);
+
+//       if (!$item.hasClass('disabled')) {
+//           navListItems.removeClass('btn-primary').addClass('btn-default');
+//           $item.addClass('btn-primary');
+//           allWells.hide();
+//           $target.show();
+//           $target.find('input:eq(0)').focus();
+//       }
+//   });
+  
+//   allPrevBtn.click(function(){
+//       var curStep = $(this).closest(".setup-content"),
+//           curStepBtn = curStep.attr("id"),
+//           prevStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+
+//           prevStepWizard.removeAttr('disabled').trigger('click');
+//   });
+
+//   allNextBtn.click(function(){
+//       var curStep = $(this).closest(".setup-content"),
+//           curStepBtn = curStep.attr("id"),
+//           nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+//           curInputs = curStep.find("input[type='text'],input[type='url']"),
+//           isValid = true;
+
+//       $(".form-group").removeClass("has-error");
+//       for(var i=0; i<curInputs.length; i++){
+//           if (!curInputs[i].validity.valid){
+//               isValid = false;
+//               $(curInputs[i]).closest(".form-group").addClass("has-error");
+//           }
+//       }
+
+//       if (isValid)
+//           nextStepWizard.removeAttr('disabled').trigger('click');
+//   });
+
+//   $('div.setup-panel div a.btn-primary').trigger('click');
+// });
+	</script>
+	{{--  stepper jquery and jscript script--}}
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
+	<script>
+	$(document).ready(function() {
+  $('#example-getting-started').multiselect({
+    numberDisplayed: 6,
+    includeSelectAllOption: true,
+    allSelectedText: 'All Days selected',
+    nonSelectedText: 'No Day selected',
+    selectAllValue: 'all',
+    selectAllText: 'Select all',
+    unselectAllText: 'Unselect all',
+    onSelectAll: function(checked) {
+      var all = $('#example-getting-started ~ .btn-group .dropdown-menu .multiselect-all .checkbox');
+      all
+      // get all child nodes including text and comment
+        .contents()
+        // iterate and filter out elements
+        .filter(function() {
+          // check node is text and non-empty
+          return this.nodeType === 3 && this.textContent.trim().length;
+          // replace it with new text
+        }).replaceWith(checked ? this.unselectAllText : this.selectAllText);
+    },
+    onChange: function() {
+        debugger;
+      var select = $(this.$select[0]);
+      var dropdown = $(this.$ul[0]);
+      var options = select.find('option').length;
+      var selected = select.find('option:selected').length;
+      var all = dropdown.find('.multiselect-all .checkbox');
+      all
+      // get all child nodes including text and comment
+        .contents()
+        // iterate and filter out elements
+        .filter(function() {
+          // check node is text and non-empty
+          return this.nodeType === 3 && this.textContent.trim().length;
+          // replace it with new text
+        }).replaceWith(options === selected ? this.options.unselectAllText : this.options.selectAllText);
+    }
+  });
+
+//   $("#form").submit(function(e) {
+//     e.preventDefault();
+//     alert($(this).serialize());
+//   });
+});
+
+
+	</script>
+	<script>
+	$(".newformbtn").click(function() {
+		$(".newclinic-div").css('margin-top,30px')
+		$(".cloned-div").first().clone().appendTo(".newclinic")
+		
+	})</script>
+	<script>
+	$(".newschedulebtn").click(function(){
+		$(".cloned-schedule").last().clone().appendTo(".new-schedule")
+	})</script>
 </body>
 
 </html>
