@@ -25,7 +25,7 @@ $app = new Illuminate\Foundation\Application(
 | incoming requests to this application from both the web and CLI.
 |
 */
-
+// $app->configure('filesystems');
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
     sukoonweb\Http\Kernel::class

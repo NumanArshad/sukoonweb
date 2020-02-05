@@ -1,25 +1,44 @@
 <div class="row bg-white"
     style="padding-top:20px;padding-bottom:20px;margin-bottom:20px;margin-left:0.04%;margin-right:0.04%;margin-top:-10px">
     <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-        <img src="{{ asset('template/img/logo.png')}}" style="width:100%;height:100px;padding-bottom:50px" alt=""
+        <img src="{{ asset('storage/'.$doctor->profile_img)}}" 
+        {{-- "{{ asset('template/img/logo.png')}}" --}}
+         style="width:100%;padding-bottom:50px" alt=""
             srcset="">
     </div>
     <div class="col-lg-10 col-md-9 col-sm-8 col-xs-8 justify-content-start">
         <div class="col-xs-12 " style="text-color:blue;font-weight:bold;font-size:20px">
-            <a href="#"> doctor name</a>
+            <a href="#"> 
+                @if (empty($doctor->name))
+                doctorname 
+                @else
+                 {{$doctor->name}}
+                @endif
+               
+                </a>
         </div>
         <div class="col-xs-12" style="font-weight:bold">
-            Heart Specialist
+            {{$doctor->specialist}}
         </div>
         <div class="col-xs-12" style="color:gray">
-            MBBS from KingAdward
+            {{-- MBBS from KingAdward --}}
+            {{$doctor->qualification}}
         </div>
         <div class="col-xs-12" style="color:black">
-            10 year experince at Service hospital
+            {{$doctor->experience}}
+
+         
+            {{-- 10 year experince at Service hospital --}}
         </div>
         <div class="col-xs-12">
             <span style="color:green;font-size:17px;font-weight:bold">Available</span>
-            <span style="color:black;font-size:17px">500 RS.</span>
+            @foreach ($fee_doc_list as $item)
+                @if($item->docId==$doctor->id)
+                <span style="color:black;font-size:17px">{{$item->appointmentfee}} RS.</span>
+            @break
+                @endif
+            @endforeach
+            {{-- <span style="color:black;font-size:17px">500 RS.</span> --}}
         </div>
         @if ($activepage=='')
         <div class="col-xs-12" style="margin-top:10px">
@@ -93,9 +112,12 @@
 
         <div class="col-xs-12" style="margin-top:-10px">
             <button class="btn btn-primary btn-lg" style="margin-top:5px;border-radius:20px;text-transform:lowercase"
-                onclick="window.location='{{url("templateindex/bookappoint")}}'">Book
+                onclick="window.location='{{url("doctors/bookappointment",[$doctor->id])}}'">
+                Book
                 Appointment</button>
-            <button class="btn btn-default btn-lg" onclick="window.location='{{url("templateindex/consultdoctor")}}'"
+            <button class="btn btn-default btn-lg"
+             {{-- onclick="window.location='{{url("templateindex/consultdoctor")}}'" --}}
+             onclick="window.location='{{url("doctors/consult",[$doctor->id])}}'"  
                 style="border-radius:20px;margin-top:5px;text-transform:lowercase;color:black">Consult Online</button>
         </div>
  
@@ -103,8 +125,11 @@
     @elseif($activepage=='consultdoctor')
         
     <div class="col-xs-12" style="margin-top:-5px;margin-left:-5px">
+        
         <button class="btn btn-primary" style="margin-top:5px;border-radius:20px;text-transform:lowercase"
-            onclick="window.location='{{url("templateindex/consultdoctor")}}'">Book
+        onclick="window.location='{{url("doctors/consult",[$doctor->id])}}'"  
+        {{-- onclick="window.location='{{url("templateindex/consultdoctor")}}'" --}}
+            >Book
             your Time</button>
       
       

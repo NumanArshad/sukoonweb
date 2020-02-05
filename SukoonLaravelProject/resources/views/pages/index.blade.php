@@ -299,7 +299,7 @@
                 <li class="cbp-item psychiatrist">
                     <a href="template/doctors/member1.html" class="cbp-caption cbp-singlePage">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="template/img/team/1.jpg" alt="" width="100%">
+                            <img src="template/img/photo/1.jpg" alt="" width="100%">
                         </div>
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignCenter">
@@ -315,7 +315,7 @@
                 <li class="cbp-item cardiologist">
                     <a href="template/doctors/member2.html" class="cbp-caption cbp-singlePage">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="template/img/team/2.jpg" alt="" width="100%">
+                            <img src="template/img/photo/1.jpg" alt="" width="100%">
                         </div>
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignCenter">
@@ -328,10 +328,10 @@
                     <a href="template/doctors/member2.html" class="cbp-singlePage cbp-l-grid-team-name">Joseph Murphy</a>
                     <div class="cbp-l-grid-team-position">Cardiologist</div>
                 </li>
-                <li class="cbp-item cardiologist">
+                <li class="cbp-item cardiologist neurologist">
                     <a href="template/doctors/member3.html" class="cbp-caption cbp-singlePage">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="template/img/team/3.jpg" alt="" width="100%">
+                            <img src="{{asset('template/img/photo/1.jpg')}}" alt="" width="100%">
                         </div>
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignCenter">
@@ -347,7 +347,7 @@
                 <li class="cbp-item neurologist">
                     <a href="template/doctors/member4.html" class="cbp-caption cbp-singlePage">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="template/img/team/4.jpg" alt="" width="100%">
+                            <img src="{{asset('template/img/team/4.jpg')}}" alt="" width="100%">
                         </div>
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignCenter">

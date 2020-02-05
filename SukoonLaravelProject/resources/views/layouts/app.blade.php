@@ -49,6 +49,7 @@
 
 	<div id="wrapper">
 		@include('inc.navbar')
+
 		{{-- <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="top-area">
 			<div class="container">
@@ -98,6 +99,9 @@
 
 		<!-- /.container -->
 		{{-- </nav>  --}}
+	</div>
+	<div style="margin-top:60px">
+	@include('inc.messages')
 	</div>
 	@yield('childcontent')
 
@@ -996,7 +1000,22 @@ $('div.setup-panel div a.btn-success').trigger('click');
       var all = $('#example-getting-started ~ .btn-group .dropdown-menu .multiselect-all .checkbox');
       all
       // get all child nodes including text and comment
-        .contents()
+        if($('.storeselecteddays').val()!='all'){
+		$('.storeselecteddays').val('all')
+		}
+		else{
+			$('.storeselecteddays').val('')
+		}
+		//window.alert("fen")
+		console.log($('.storeselecteddays').val())
+		.contents()
+		
+		// if($('.storeselecteddays').val()!=='all'){
+		// $('.storeselecteddays').val('all')
+		// }
+		// else{
+		// 	$('.storeselecteddays').val('')
+		// }
         // iterate and filter out elements
         .filter(function() {
           // check node is text and non-empty
@@ -1007,13 +1026,17 @@ $('div.setup-panel div a.btn-success').trigger('click');
     onChange: function() {
         debugger;
       var select = $(this.$select[0]);
+	  
       var dropdown = $(this.$ul[0]);
       var options = select.find('option').length;
       var selected = select.find('option:selected').length;
       var all = dropdown.find('.multiselect-all .checkbox');
       all
       // get all child nodes including text and comment
-        .contents()
+	  $('.storeselecteddays').val($(this.$select).val())
+		.contents()
+		
+		//window.alert("value is "+$(this.$select).val())
         // iterate and filter out elements
         .filter(function() {
           // check node is text and non-empty
@@ -1031,6 +1054,7 @@ $('div.setup-panel div a.btn-success').trigger('click');
 
 
 	</script>
+
 	<script>
 	$(".newformbtn").click(function() {
 		$(".newclinic-div").css('margin-top,30px')
@@ -1041,6 +1065,11 @@ $('div.setup-panel div a.btn-success').trigger('click');
 	$(".newschedulebtn").click(function(){
 		$(".cloned-schedule").last().clone().appendTo(".new-schedule")
 	})</script>
+	
+	<script>
+		$(".newschedula").click(function(){
+			$(".furtherdiv").append("<button type='button' class='btn btn-primary'>hahjfb</button>")
+		})</script>
 </body>
 
 </html>

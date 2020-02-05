@@ -27,9 +27,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#intro">Home</a></li>
+        <li class="active"><a href="{{url('templateindex')}}">Home</a></li>
         <li><a href="#service">Service</a></li>
-        <li><a href="#doctor">Doctors</a></li>
+        <li><a href="{{url('doctors')}}">Doctors</a></li>
         {{-- <li><a href="#facilities">Facilities</a></li> --}}
         {{-- <li><a href="{{url('templateindex/newdoctor')}}">Join As Doctor</a></li> --}}
         <li class="dropdown">
@@ -38,9 +38,10 @@
               Doctors <b class="caret"></b>
             </a>
           <ul class="dropdown-menu">
+            
             <li><a href="{{url('templateindex/alldoctor')}}">Neurologist</a></li>
-            <li><a href="{{url('templateindex/alldoctor')}}">Urologists</a></li>
-            <li><a href="{{url('templateindex/alldoctor')}}">Dermatologists</a></li>
+            <li><a href="{{url('doctors/specific/Urologist')}}">Urologists</a></li>
+            <li><a href="{{url('doctors/specific/Dermatolgist')}}">Dermatologists</a></li>
             <li><a href="{{url('templateindex/alldoctor')}}">Pulmonologists</a></li>
           </ul>
         </li>
@@ -63,7 +64,7 @@
               More <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="index.html">Contact Us</a></li>
-            <li><a href="{{url('templateindex/newdoctor')}}">Join As Doctor</a></li>
+            <li><a href="{{url('doctors/create')}}">Join As Doctor</a></li>
             {{-- <li><a href="index-cta.html">Home CTA</a></li>
             <li><a href="https://bootstrapmade.com">Download</a></li> --}}
           </ul>

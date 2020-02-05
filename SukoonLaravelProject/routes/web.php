@@ -37,6 +37,8 @@ Route::get('/pageindex', function () {
 /////////////////////////////////////////
 
 /////////////////////////////////////template route/////////////////////////////////
+use sukoonweb\BasicInfo;
+use sukoonweb\Hospitals_Clinic;
 Route::get('/templateindex',function(){
     return view('pages.index');
 });
@@ -47,7 +49,14 @@ Route::get('templateindex/alldoctor',function(){
     return view('pages.alldoctorcontainer');
 });
 Route::get('templateindex/bookappoint',function(){
-    return view('pages.bookappointment');
+    // $getalldoctor=BasicInfo::all();
+    // $getOnlyFee=DB::table('basic_infos')
+    //   ->join('hospitals__clinics','basic_infos.id','=','hospitals__clinics.doctorId')
+    //   ->select('hospitals__clinics.name')->get();
+
+    //   $alldoctordata=array('doctor'=> $getalldoctor,
+    //   'fee'=>$getOnlyFee);
+    return view('pages.bookappointment');//->with($alldoctordata);
 });
 Route::get('templateindex/consultdoctor',function(){
     return view('pages.consultdoctor');
@@ -55,3 +64,23 @@ Route::get('templateindex/consultdoctor',function(){
 Route::get('templateindex/consultdoctorindex',function(){
     return view('pages.consultingcontainer');
 });
+Route::resource('doctors','AllDoctorsController');
+Route::get('doctors/specific/{specialist}','AllDoctorsController@specific_specialist');
+
+Route::get('doctors/doctorjoining','AllDoctorsController@create');
+
+Route::get('doctors/bookappointment/{id}','AllDoctorsController@bookappointment');
+Route::post('doctors/bookappointment/{id}','AllDoctorsController@storeappointment');
+
+Route::get('doctors/consult/{id}','AllDoctorsController@consultview');
+Route::post('doctors/consult/{id}','AllDoctorsController@storeconsultorder');
+
+Route::get('doctors/registerhospitals/{id}','AllDoctorsController@addhospital');
+Route::post('doctors/registerhospitals/{id}','AllDoctorsController@storehospital');
+Route::get('sendemail','AppointConsultController@getview_sendemail');
+Route::post('sendemail','AppointConsultController@sendemail');
+
+
+
+//Route::post('doctors/bookappointment/{id}','AllDoctorsController@storeappointment');
+//Route::resource('doctors/joinasdoctor','AllDoctorsController@create');

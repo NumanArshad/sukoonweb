@@ -6,6 +6,13 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreatePasswordResetsTable extends Migration
 {
+    // $table->bigIncrements('id');
+    // $table->string('name');
+    // $table->string('email')->unique();
+    // $table->string('contact#1')->unique();
+    // $table->string('contact#2')->nullable();
+    // $table->string('city')->nullable();
+    // $table->timestamps();
     /**
      * Run the migrations.
      *

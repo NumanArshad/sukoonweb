@@ -176,48 +176,79 @@
             </div>
         </div>
 
-        <form role="form">
+     
+{{-- {!! Form::label('name','Name') !!} --}}
+{{-- {!! Form::text('name','',['class'=>'form-control','placeholder'=>'enter name here']) !!} --}}
+
+        {{-- <form role="form"> --}}
             <div class=" setup-content" id="step-1">
+                {!! Form::open(['action'=>'AllDoctorsController@store','method'=>'POST']) !!}
+               {{-- {{csrf_field()}} --}}
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="form-group">
-                        <label for="">Name</label>
+                        {{ Form::label('name','Name') }}
+                        {{ Form::text('name','',['class'=>'form-control','placeholder'=>'enter name here']) }}
+                        {{-- <label for="">Name</label>
                         <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">Help text</small>
+                        <small id="helpId" class="text-muted">Help text</small> --}}
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <label for="">Email</label>
+                      
+                        {{ Form::label('email','Email') }}
+                        {{ Form::text('email','',['class'=>'form-control','placeholder'=>'enter email here']) }}
+                        {{-- <label for="">Email</label>
                         <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">Help text</small>
+                        <small id="helpId" class="text-muted">Help text</small> --}}
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <label for="">Contact#1</label>
+                        {{ Form::label('contact_1','Contact#1') }}
+                        {{ Form::text('contact_1','',['class'=>'form-control','placeholder'=>'enter contact_1 here']) }}
+                        {{-- <label for="">Contact#1</label>
                         <input type="tel" name="" id="" class="form-control" placeholder="" aria-describedby="helpId"
                             pattern="[0-9]{10}" required>
                         <small id="helpId" class="text-muted">Help text</small>
-                        <span class=" "></span>
+                        <span class=" "></span> --}}
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <label for="">Contact#2(optional)</label>
+                        {!!Form::label('contact_2','Contact#2')!!}
+                        {{-- {{ Form::label('contact_2','Contact#2') }} --}}
+                        {{ Form::text('contact_2','',['class'=>'form-control','placeholder'=>'enter contact_2 here']) }}
+                        {{-- <label for="">Contact#2(optional)</label>
                         <input type="tel" name="" id="" class="form-control" placeholder="" aria-describedby="helpId"
                             pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                         <small id="helpId" class="text-muted">Help text</small>
-                        <span class=" "></span>
+                        <span class=" "></span> --}}
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <label for="">City</label>
+                        {{ Form::label('city','City') }}
+                        {{ Form::text('city','',['class'=>'form-control','placeholder'=>'enter city here']) }}
+                        {{-- <label for="">City</label>
                         <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">Help text</small>
+                        <small id="helpId" class="text-muted">Help text</small> --}}
+                        
                     </div>
                 </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        {{ Form::label('profile_img','Upload your photo') }}
+                        {{ Form::file('profile_img') }}
+                        {{-- <label for="">Upload your photo</label>
+                        <input type="file" accept='image/*' name="" id="" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Help text</small> --}}
+                    </div>
+                </div>
+                {{ Form::submit('Submit',['class'=>'btn btn-primary']) }}
+                {!! Form::close() !!}
                 {{-- <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="form-group">
                     <label for="">Designation</label>
@@ -271,26 +302,37 @@
                 </div>--}}
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <label for="">Specialist</label>
+                        {{ Form::label('qualification','Qualification') }}
+                        {{ Form::text('Qualification','',['class'=>'form-control','placeholder'=>'enter qualification here']) }}
+        
+                        {{-- <label for="">Education</label>
                         <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">Help text</small>
+                        <small id="helpId" class="text-muted">Help text</small> --}}
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <label for="">Education</label>
+                        {{ Form::label('specialist','Specialist') }}
+                        {{ Form::text('specialist','',['class'=>'form-control','placeholder'=>'enter specialist here']) }}
+                    
+                    
+                        {{-- <label for="">Specialist</label>
                         <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">Help text</small>
+                        <small id="helpId" class="text-muted">Help text</small> --}}
+                        
                     </div>
                 </div>
+                
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <label for="">Upload your photo</label>
-                        <input type="file" accept='image/*' name="" id="" class="form-control" placeholder=""
-                            aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">Help text</small>
+                        {{ Form::label('experience','Experience') }}
+                        {{ Form::text('experience','',['class'=>'form-control','placeholder'=>'enter experience here']) }}
+                        {{-- <label for="">Experience</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Help text</small> --}}
                     </div>
                 </div>
+              
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="">Provide Services</label>
@@ -413,10 +455,10 @@
                         <input maxlength="200" type="text" required="required" class="form-control"
                             placeholder="Enter Company Address" />
                     </div>
-                    <button class="btn btn-success pull-right" type="submit">Finish!</button>
+                    {{-- <button class="btn btn-success pull-right" type="submit">Finish!</button> --}}
                 </div>
             </div>
-        </form>
+        {{-- </form> --}}
     </div>
     {{-- <div class="container"> --}}
 
